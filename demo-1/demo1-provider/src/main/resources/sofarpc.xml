@@ -5,8 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
             http://sofastack.io/schema/sofaboot http://sofastack.io/schema/sofaboot.xsd">
 
-    <sofa:service ref="userRpcServiceImpl" interface="com.demo1.api.UserRpcService">
-        <sofa:binding.bolt/>
-    </sofa:service>
-
+    <sofa:service ref="userRpcServiceImpl"   interface="com.demo1.api.UserRpcService"  >
+        <sofa:binding.bolt  />
+    </sofa:service >
+    <sofa:service ref="book"   interface="com.demo1.api.BookService" >
+        <sofa:binding.bolt  />
+    </sofa:service >
 </beans>

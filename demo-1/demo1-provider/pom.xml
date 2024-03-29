@@ -8,7 +8,7 @@
     </parent>
     <artifactId>demo1-provider</artifactId>
     <properties>
-        <java.version>17</java.version>
+        <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -17,6 +17,13 @@
             <artifactId>demo1-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.ecwid.consul/consul-api -->
+        <dependency>
+            <groupId>com.ecwid.consul</groupId>
+            <artifactId>consul-api</artifactId>
+            <version>1.4.5</version>
+        </dependency>
+
 
         <!-- 引入 Spring Boot 基础 Starter 依赖 -->
         <dependency>
@@ -37,4 +44,12 @@
         </dependency>-->
 
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

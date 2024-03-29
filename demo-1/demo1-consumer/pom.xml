@@ -8,8 +8,8 @@
     </parent>
     <artifactId>demo1-consumer</artifactId>
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -18,7 +18,11 @@
             <artifactId>demo1-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.ecwid.consul</groupId>
+            <artifactId>consul-api</artifactId>
+            <version>1.4.5</version>
+        </dependency>
         <!-- 引入 SpringMVC 的 Spring Boot 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

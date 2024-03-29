@@ -1,11 +1,14 @@
 spring:
   application:
     name: demo1-provider # 应用名
-
 com:
   alipay:
     sofa:
       rpc:
         registry:
           address: consul://127.0.0.1:8500
+        bolt-port:  ${random.int(12200,60000)}
+server:
+  port: ${random.int(2000,8000)}
+
 
